@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas 3 - exemplo 3</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas width="500" height="300" id="quadro"></canvas>
+    <script>
+        var quadro = document.getElementById('quadro')
+        if (quadro.getContext) {
+            var contexto = quadro.getContext("2d")
+            contexto.beginPath()
+            contexto.fillStyle = "yellow"
+            contexto.arc(250, 140, 40, Math.PI/310 * 80, Math.PI/180*315); // Círculo exterior
+            contexto.lineTo(250, 140)
+            contexto.lineTo(279, 169)
+            contexto.fill()
+            contexto.stroke()
+
+        }
+
+    </script>
+</body>
+
+</html>

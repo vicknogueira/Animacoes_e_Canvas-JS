@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações - exemplo 1</title>
+    <style>
+        button:hover {
+            background-color: black !important;
+        }
+
+        li:first-child {
+            /* Para pegar a o primeiro item de uma lista e fazer algo com ela*/
+            color: red;
+        }
+
+        li:last-child {
+            /* Para pegar a o ultimo item de uma lista e fazer algo com ela*/
+            color: blue;
+        }
+
+        p:first-child i {
+            color: cadetblue;
+        }
+
+        p:last-child i {
+            color: blue;
+        }
+
+        input[type="text"] {
+            color: yellowgreen;
+        }
+
+        input[type="password"] {
+            color: orange;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form-group {
+            width: 400px;
+            background-color: white;
+            box-shadow: 1px 0px 8px 0px #80808075;
+            margin-bottom: 1rem;
+            padding: 33px;
+        }
+        #box{
+            width: 350px;
+            height: 200px;
+            background-color: white;
+        }
+        #box:hover{
+            transition: 2s;
+            width: 370px;
+            box-shadow: 1px 0px 8px 0px #80808075;
+        }
+        
+        #box2{
+            width: 100%;
+            height: 300px;
+
+        }
+        #box2:hover #boxdo2{
+            transition: 2s;
+            transform: translateX(38em);
+            width: 350px;
+            height: 200px;
+            background-color: black;
+            box-shadow: 1px 0px 8px 0px #80808075;
+        }
+        #box3{
+            width: 100%;
+            height: 300px;
+
+        }
+        #box3:hover #boxdo3{
+            transition: 2s;
+            transform: scaleZ(0.3);
+            width: 350px;
+            height: 200px;
+            background-color: black;
+            box-shadow: 1px 0px 8px 0px #80808075;
+        }
+        #caixa form{
+            margin: 0 auto;
+            display: grid;
+            justify-content: center;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" </head>
+<body>
+    <div id="caixa">
+
+        <!-- <button class="btn btn-secondary btn-lg">Clique aqui</button><br>
+        <br>
+        <br>
+        <br>
+        <button class="btn btn-secondary btn-lg">Clique aqui</button>
+        <ul id="lista">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul> -->
+        <!-- <i> serve para colocar em itálico -->
+        <!-- <div>
+            <p>Lorem ipsum dolor sit <i>Algo</i> consectetur adipisicing elit. Unde tempora perferendis voluptas quae
+                adipisci ipsa placeat sint dicta molestias sequi fuga rem optio blanditiis autem libero amet, ratione,
+                in excepturi!</p>
+            <p>Lorem ipsum dolor sit <i>Algo</i> amet consectetur adipisicing elit. Unde tempora perferendis voluptas
+                quae adipisci ipsa placeat sint dicta molestias sequi fuga rem optio blanditiis autem libero amet,
+                ratione, in excepturi!</p>
+            <p>Lorem ipsum dolor sit <i>Algo</i> amet consectetur adipisicing elit. Unde tempora perferendis voluptas
+                quae adipisci ipsa placeat sint dicta molestias sequi fuga rem optio blanditiis autem libero amet,
+                ratione, in excepturi!</p>
+            <p>Lorem ipsum dolor sit <i>Algo</i> amet consectetur adipisicing elit. Unde tempora perferendis voluptas
+                quae adipisci ipsa placeat sint dicta molestias sequi fuga rem optio blanditiis autem libero amet,
+                ratione, in excepturi!</p>
+        </div> -->
+        <h1>Cadastre-se</h1><br><br>
+        <form action="">
+            <div class="form-group row">
+                <label for="">Nome: </label>
+                <input class="form-control" type="text" name="" id=""><br><br>
+                <label for="">Senha: </label>
+                <input class="form-control" type="password" name="" id=""><br><br>
+                <label for="">Confirme a senha: </label>
+                <input class="form-control" type="password" name="" id=""><br><br>
+                <input type="submit" value="Enviar">
+
+            </div>
+        </form>
+        <div id="box"></div>
+
+        <div id="box2">
+            <div id="boxdo2"></div>
+        </div>
+        <div id="box3">
+            <div id="boxdo3"></div>
+        </div>
+        
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

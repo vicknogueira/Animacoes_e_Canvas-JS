@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas 2 - exemplo 2</title>
+    <style>
+        canvas{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="500" height="300" id="quadro"></canvas>
+    <script>
+        var quadro = document.getElementById("quadro")
+
+        //verificando suporte no navegador
+        if(quadro.getContext){
+            var contexto = quadro.getContext("2d")
+            contexto.fillStyle = "yellowgreen"
+            contexto.fillRect(40, 40, 380, 140)
+            contexto.fillStyle = "purple"
+            contexto.fillRect(60, 60, 370, 150)
+            contexto.fillStyle = "orange"
+            contexto.fillRect(80, 80, 360, 160)
+            contexto.fillStyle = "blue"
+            contexto.fillRect(100, 100, 350, 150)
+        }else{
+            alert("Não funcionar nessa navegador!!!")
+        }
+
+
+    </script>
+</body>
+</html>
